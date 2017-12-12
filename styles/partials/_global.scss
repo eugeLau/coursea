@@ -1,0 +1,197 @@
+/* GLOBAL STYLES*/
+
+$primaryColor: #808080;;
+$secondaryColor:#333333;
+
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+@mixin primaryText($fontSize) {
+    font-size: $fontSize;
+    font-family: 'Raleway', sans-serif;
+}
+
+@mixin secondaryText($fontSize) {
+    font-size: $fontSize;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+		font-size: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    @include primaryText(1.6rem);
+    line-height: 28px;
+}
+
+.wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    @include primaryText(4.8rem);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+.titleContainer {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.titleContainer p {
+    color:#808080;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.indContainer {
+    width: calc(25% - 6%/4);
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.indContainer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: #fff;
+    @include primaryText(1.8rem);
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.titleContainerLink {
+        @include primaryText(1.8rem);
+        text-transform: uppercase;
+        color:  #55ceb8;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .titleContainerLink:hover {
+        color:  #42a792;
+    }
+
+    .gridLayout {
+        margin-top: 4%;
+        padding-left: 0;
+    }
+
+    .gridItems {
+        padding: 0 7% 7% 7%;
+    }
+
+    
+
+    .itemTag {
+        @include secondaryText(1.2rem);
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    .itemTitle {
+        @include primaryText(1.6rem);
+        font-weight: 600;
+        color: $secondaryColor;
+        margin-top: 0;
+    }
+
+    .itemDuration {
+        @include primaryText(1.4rem);
+        font-weight: 500;
+        color:#9d9c9c;
+        margin-bottom: 0;
+    }
+
+    .itemDuration i {
+        font-size: .5rem;
+    }
+
+.footerBtn:hover {
+    background: white;
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .footerBtn:hover {
+        color: #fff;
+        background: none;
+    }
+
+    .footerBtn:active {
+        background: white;
+        color: black;
+    }
+}
+
+.regularBtn:hover {
+    background: white;
+    color: #55ceb8;
+}
+
+@media (max-width: 767px) {
+    .regularBtn:hover {
+        color: #fff;
+        background: none;
+    }
+
+    .regularBtn:active {
+        background: white;
+        color: #55ceb8;
+    }
+
+    .itemTag  {
+    font-size: 1.6rem;
+    }
+
+    .itemTitle {
+        font-size: 1.8rem;
+    }
+
+    .itemDuration {
+        font-size: 1.6rem;
+    }
+}
+
+    
+
+@media (max-width: 320px) {
+    body {
+            min-width: 320px;
+        }
+
+}

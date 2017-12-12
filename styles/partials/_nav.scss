@@ -1,0 +1,111 @@
+/*NAV STYLES*/
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        list-style: none;
+    }
+
+    ul:first-of-type {
+        display: flex;
+        // justify-content: flex-start;
+        flex-grow: 4;
+        justify-content: space-between;
+    }
+
+    ul:nth-of-type(2) {
+        display:flex;
+        flex-grow: 5;
+    }
+
+    ul:last-of-type {
+        display: flex;
+        // justify-content: flex-end;
+        // width: 18%;
+        flex-grow: 1;
+        justify-content: space-between;
+        
+    }
+
+
+    ul:first-of-type a,
+    ul:last-of-type a {
+        color: #fff;
+        text-decoration: none;
+        @include secondaryText(1.3rem);
+        padding: 2% 0;
+        text-transform: uppercase;
+    }
+
+    .mainNavWrapper a:hover {
+        color: dimgray;
+    }
+
+    
+}
+    // .sideMainNav {
+    //     display: none;
+    // }
+    .mainNav .sub-menu{
+        background: #1c1c1c;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        padding: 0.5% 2%;
+        z-index: 10;
+    }
+
+    .mainNav .arrowMenu:hover .sub-menu {
+        display: flex;
+        display: column;
+        
+    }
+
+    .mainNav .sub-menu a{
+        display: block;
+        padding: 1% 0;
+    }
+
+    .mainNav .sub-menu a:hover {
+        color: dimgray;
+    }
+
+@media (max-width: 760px) {
+    .header__top--icon input,
+    .halfCircle {
+        display: none;
+    }
+    
+    .header__top--icon button {
+        border-radius: 50%;   
+    }
+
+    .mainNav .sub-menu a{
+        display: inline-block;
+        padding: 1px 10px;
+        margin: 0;
+    }
+
+    .mainNav .arrowMenu:hover .sub-menu {
+        // display: none;
+
+        display:flex;
+        padding: 10%;
+        background: black;
+        right: 154px;
+        flex-direction: column;
+        border-radius: 5px;
+    }
+
+    nav ul:first-of-type {
+        justify-content: flex-start;
+        padding-top: 2%;
+    }
+
+    nav li{
+        padding-bottom: 6%;
+    }
+}

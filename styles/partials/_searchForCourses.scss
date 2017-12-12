@@ -1,0 +1,94 @@
+/*Search for Courses*/
+
+.searchForCourses {
+    color: white;
+    background: rgba(89, 218, 195, 0.7);
+    text-align: center;
+    padding: 1% 0 5% 0;
+    h2 {
+        margin-bottom: 5%;
+        margin-top: 4%;
+    }
+    .btnBox {
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color: rgba(89, 218, 195, 0.7);
+    }
+    select,
+    input {
+        border: 1px solid rgba(89, 218, 195, 0.7);
+        border-radius: 5px;
+    }
+    
+    select:first-of-type {
+        padding: 0 18% 0 1%;
+    }
+
+    select:last-of-type {
+        padding: 0 9% 0 1%;
+    }
+
+    a {
+        @extend .btn;
+        padding: .5% 4%;
+        display: inline-block;
+    }
+    input {
+        padding: 0 20% 0 1%;
+        
+    }
+
+    #category, 
+    #type {
+        background-repeat: no-repeat;
+        background-position: 97% center;
+        background-size: 10px;
+        background-image: url(../images/arrow-icon.png);
+        appearance: none;
+        color: #808080;
+    }
+
+
+}
+
+@media (max-width: 810px) {
+    .searchForCourses select:first-of-type {
+        width: 50%;
+        padding: 1% 18% 1% 1%;
+    }
+
+    .searchForCourses select:last-of-type {
+        width: 30%;
+    }
+
+    .searchForCourses input {
+        margin-top: 3%;
+    }
+
+    .searchForCourses a {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 480px) {
+    .searchForCourses .btnBox {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .searchForCourses #category, .searchForCourses #type {
+        width: 100%;
+        padding: 4%;
+        margin-top: 3%;
+    }
+
+    .searchForCourses input,
+    .searchForCourses a {
+        padding: 4%;
+        margin-top: 3%;
+    }
+
+}

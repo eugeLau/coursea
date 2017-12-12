@@ -1,0 +1,267 @@
+/*HEADER STYLES*/
+
+header {
+    #hamburger,
+    #signIn {
+        display: none;
+    }
+
+    #signIn {
+        width: 30px;
+        height: 30px;
+        background: #3d3d3f;
+        border-radius: 50%;
+        margin: 10% 0;
+    }
+
+    #signIn i {
+        color: white;
+        padding: 25% 33%;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    .mainNav {
+        padding: 1% 0;
+    }
+
+    .navBackground {
+        background: #1c1c1c;
+    }
+
+    .header__top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1%;
+    }
+
+    .header__top--icon {
+        display: flex;
+    }
+
+    .colourWheel {
+        width: 16%;
+    }
+
+    .logo {
+        width: 61%;
+        padding-left: 7%;
+    }
+
+    button {
+        padding: 3.5% 7%;
+        background: #3d3d3f;
+        border: none;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        margin-right: 1%;
+        margin-left: 1%;
+        i {
+            font-size: 1.6rem;
+            color: white;
+        }
+    }
+
+    input {
+        background: #3d3d3f;
+        border: none;
+        padding-left:7%;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    // .halfCircle {
+    //     width: 23px;
+    //     height: 30px;
+    //     background: #3d3d3f;
+    //     border-top-right-radius: 50%;
+    //     border-bottom-right-radius: 50%;
+    // }
+
+    .header--border {
+        height: 1px;
+        border-bottom: 1px solid #3d3d3f;
+    }
+
+    .navBanner {
+        background: linear-gradient(rgba(37, 30, 30, 0.51), rgba(37, 30, 30, 0.51)), url(../images/hero.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        @include primaryText(4.8rem);
+        font-weight: 200;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.801);
+    }
+
+    h1:first-of-type {
+        padding-top: 10%;
+    }
+
+    p {
+        @include primaryText(1.7rem);
+        width: 50%;
+        padding-top: 2%;
+        padding-bottom: 10%;
+        color: rgba(255, 255, 255, 0.801);
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .navArrow {
+        width: 30px;
+        height: 30px;
+        background:  rgba(255, 255, 255, 0.21);
+        border-radius: 50%;
+        margin: 0 1%;
+    }
+
+    .navArrow i {
+        padding: 30% 41%;
+        color: white;
+        font-size: 1.4rem;
+    }
+
+    .navBorder {
+        height: 1px;
+        border-bottom:1px solid rgba(255, 255, 255, 0.164);
+        width: 50%;
+        margin-top:3%;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .centerWrapper h1{
+        text-align: center;
+    }
+
+     header p {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .centerWrapper p {
+        width: 62%;
+    }
+     
+    .navBorder {
+        margin: 0 auto;
+    }
+        
+}
+
+@media (max-width: 760px) {
+
+    .signUp,
+    .signIn {
+        display: none;
+    }
+
+    h1{
+        font-size: 4.2rem;
+    }
+
+    .centerWrapper p {
+        font-size: 1.6rem;
+    }
+
+    .header__top--icon input,
+    .halfCircle {
+        display: none;
+    }
+    
+    .header__top--icon button {
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+
+    header #hamburger,
+    header #signIn {
+        display: list-item;
+    }
+ 
+    // toggle nav styles
+    .navBanner {
+	position: relative;
+	left: 0;
+	transition: left 0.5s ease;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    #toggle:checked + .mainNavWrapper {
+	right: 0;
+    }
+
+    
+    label[for="toggle"] {
+        position: fixed;
+        top: 55px;
+        left: 42px;
+        color: rgb(255, 255, 255);
+        list-style: none;
+        font-size: 1.6rem;
+        z-index: 30;
+        background: rgba(28, 28, 28, .5);
+        padding: 1% 1% 1% 3%;
+    }
+
+    .mainNavWrapper {
+        background: black;
+        color: white;
+        position: fixed; 
+        width: 154px;
+        right: -300px;
+        top: 0;
+        bottom: 0; 
+        margin: 0;
+        padding-left: 2%;
+
+        transition: all 0.5s ease; 
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        list-style-type: none;
+
+        z-index: 20;
+    }
+
+    .mainNavWrapper a {
+        margin: 4% 0;
+    }
+}
+
+@media (max-width: 620px) {
+    h1{
+        font-size: 4rem;
+    }
+
+    .centerWrapper p {
+        width: 80%;
+    }
+}
+
+@media (max-width: 585px) {
+    h1{
+        font-size: 3.5rem;
+    }
+
+    .centerWrapper p {
+        width: 90%;
+    }
+}

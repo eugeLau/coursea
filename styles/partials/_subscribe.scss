@@ -1,0 +1,40 @@
+/*Subscribe*/
+
+.subscribe {
+    background: #59dac3;
+    text-align: center;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 3.5%;
+    p {
+        font-size: 3rem;
+        span {
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+    }
+
+    a {
+        @extend .btn;
+        padding: 1% 4%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .subscribe .wrapper {
+        width: 95%;
+    }
+}
+
+@media (max-width: 545px) {
+    .subscribe .wrapper {
+        padding-bottom: 4%;
+    }
+}
+
+@media (max-width: 345px) {
+    .subscribe .wrapper {
+        padding-bottom: 6%;
+    }
+}

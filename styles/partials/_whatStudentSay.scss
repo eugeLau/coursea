@@ -1,0 +1,150 @@
+/*WHAT STUDENTS SAY*/
+
+.whatStudentSay {
+    padding-bottom: 6%;
+    padding-top: 1%;
+    img {
+        width: 125px;
+        height: 125px;
+        margin: 5% 0 0 6%;
+    }
+    .indStudent {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: calc(50% - 4%/2);
+        margin-left: 2%;
+        margin-top: 2%;
+        flex-grow: 2;
+    }
+
+    .indStudent:nth-of-type(odd) {
+        margin-left: 0;
+    }
+    .indStudent:first-of-type {
+        border: 2px dotted #55ceb8;
+    }
+
+    .indStudent:nth-of-type(2) {
+        border: 2px dotted #b6d546;
+    }
+
+    .indStudent:nth-of-type(3) {
+        border: 2px dotted #f74078;
+    }
+
+    .indStudent:last-of-type {
+        border: 2px dotted #3b9fb3;
+    }
+
+    .indStudentText {
+        width: 64%;
+    }
+    h2 {
+        margin-bottom: 0;
+    }
+
+    .LPalmer {
+        color: #55ceb8;
+    }
+
+    .JPedersen {
+        color: #b6d546;
+    }
+    .MSmith {
+        color: #f74078;
+    }
+    .SSkot {
+        color: #3b9fb3;
+    }
+
+    p:first-of-type {
+        // margin:0;
+        font-size: 1.4rem;
+        color:#9d9c9c;
+    }
+
+    p:last-of-type {
+        // margin-top: 0;
+    }
+
+    .gridLayout {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media (max-width: 990px) {
+    .whatStudentSay .indStudent{
+        width: calc(50% - 3%/2);
+        margin-left: 1.5%;
+    }
+
+    .indStudentText p{
+        padding: 0 3%;
+    }
+}
+
+@media (max-width: 880px) {
+    .whatStudentSayGrid{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .whatStudentSay .indStudent {
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    .indStudentText p{
+        padding: 0 3%;
+    }
+}
+
+@media (max-width: 750px) {
+    .whatStudentSayGrid{
+        width: 77%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 670px) {
+    .whatStudentSayGrid{
+        width: 74%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .whatStudentSayGrid{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 530px) {
+    .whatStudentSay img{
+        margin: 7% 0 0 3%;
+    }
+
+    .whatStudentSay .indStudentText {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatStudentSay .indStudent {
+        display: block;
+    }
+    .whatStudentSay img{
+        margin-left: 30%;
+    }
+
+    .whatStudentSay .indStudentText {
+        margin: 0 auto;
+        text-align: center;
+    }
+}

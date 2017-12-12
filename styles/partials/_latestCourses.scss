@@ -1,0 +1,178 @@
+/*LATEST COURSES STYLES*/
+
+.latestCourses {
+    padding-bottom: 3%;
+    .indContainer {
+        box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+        background: white;
+        border:1px solid rgba(0,0,0,0.2);
+    }
+    .indContainer:first-of-type {
+    margin-left: 0;
+    }
+
+    .indContainer:nth-of-type(5) {
+    margin-left: 0;
+    }
+
+    .itemDurationPadding {
+        padding-top: 10%;
+    }
+
+
+    .indContainer:hover {
+        background-color:rgba(237, 248, 246, 0.97);
+        border:1px solid rgba(186, 253, 241, 0.97);
+    }
+
+    .indContainer:first-of-type .itemTag {
+        color:#2ac5fb;
+    }
+
+    .indContainer:nth-of-type(2) .itemTag {
+        color:#fe1d62;
+    }
+
+    .indContainer:nth-of-type(3) .itemTag {
+        color:#b6d546;
+    }
+
+    .indContainer:nth-of-type(4) .itemTag {
+        color:#3b9fb3;
+    }
+
+    .indContainer:nth-of-type(5) .itemTag {
+        color:#0cad6b;
+    }
+
+    .indContainer:nth-of-type(6) .itemTag {
+        color:#714af2;
+    }
+
+    .indContainer:nth-of-type(7) .itemTag {
+        color:#bf3761;;
+    }
+
+    .indContainer:nth-of-type(8) .itemTag {
+        color:#2ac5fb;;
+    }
+
+    .indContainer p,
+    .indContainer h3 {
+        padding: 0 20px 0 20px;
+    }
+
+    .indContainer .padding {
+        padding-top: 8%;
+    }
+    
+}
+
+@media (max-width: 1106px) {
+    .latestCoursesGrid .indContainer {
+        width: calc(25% - 7.5%/4);
+        margin-left: 2.5%;
+    }
+}
+
+@media (max-width: 970px) {
+    .latestCoursesGrid .indContainer {
+        width: calc(25% - 6%/4);
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 940px) {
+    .latestCoursesGrid .indContainer {
+        width: calc(25% - 4.5%/4);
+        margin-left: 1.5%;
+    }
+}
+
+@media (max-width: 930px) {
+    .latestCoursesGrid {
+        justify-content: center;
+    }
+    .latestCoursesGrid .indContainer {
+        width: calc(33% - 6%/3);
+        margin-left: 3%;
+    }
+
+    .latestCoursesGrid .indContainer:nth-of-type(4),
+     .latestCoursesGrid .indContainer:nth-of-type(7){
+        margin-left: 0;
+    }
+
+    .latestCoursesGrid .indContainer:nth-of-type(5) {
+        margin-left: 3%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .latestCoursesGrid {
+        width:98%;
+        margin: 0 auto;
+    }
+
+    .latestCoursesGrid .indContainer {
+        width: calc(50% - 5%/2);
+        margin-left: 5%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+
+    .latestCoursesGrid .indContainer:nth-of-type(odd) {
+        margin-left: 0;
+    }
+    .latestCoursesGrid .indContainer:nth-of-type(4) {
+        margin-left: 5%;
+    }
+
+    .latestCoursesGrid .indContainer:hover {
+        background: white;
+        border:1px solid rgba(0,0,0,0.2);
+    }
+
+    .latestCoursesGrid .indContainer:active {
+        background-color:rgba(237, 248, 246, 0.97);
+        border:1px solid rgba(186, 253, 241, 0.97);
+    }
+
+    // .latestCourses .itemTitle:nth-of-type(even) {
+    //     margin-bottom: 5%;
+    // }
+
+    // .latestCourses .itemDuration:nth-of-type(odd) {
+    //     margin-top: 5%;
+    // }
+
+    .durationPadding {
+        padding-top: 7%;
+    }
+    
+}
+
+
+
+@media (max-width: 480px) {
+    .latestCoursesGrid .indContainer {
+        width: 80%;
+        // margin: 0 auto 5% auto;
+    }
+
+    .latestCoursesGrid .indContainer:nth-of-type(odd),
+    .latestCoursesGrid .indContainer:nth-of-type(even) {
+        margin: 0 auto 5% auto;
+    }
+    // .latestTutorialsGrid .indContainer:nth-of-type(4) {
+    //     margin-left: 0;
+    // }
+
+}
+
+@media (max-width: 480px) {
+    .latestCoursesGrid .indContainer:first-of-type {
+        margin-top: 4%;
+    }
+}
